@@ -49,7 +49,6 @@
 
 	body {
 		background-color: #202020;
-		padding-top: 50px; /* For the 50px navbar */
 		padding-bottom: 20px;
 	}
 
@@ -66,13 +65,20 @@
 		font-family: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
 		font-size: 20px;
 		border:0px;
+		margin-bottom: 0px;
 	}
 
 	.navbar .container-fluid{
 		min-width: 999px;
+		padding-right: 0px;
 	}
 
-	
+	.navbar-toggle{
+		background-color: #000;
+		position: absolute;
+		right: 5px;
+	}
+
 	.navbar-header{
 	}
 
@@ -254,9 +260,17 @@
 /*Jumbotron CSS*/
 	.jumbotron{
 		text-align: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: #555;
 	}
 	.jumbotron h1{
 		color: #fff;
+	}
+
+	/*Different backgrounds*/
+	.home-jumbotron{
+		background-image: url("../images/home-jumbotron.jpg")
 	}
 
 /*Main Body CSS*/
@@ -308,17 +322,13 @@
 
 	/*Thumbnail CSS*/
 		.row{
-			padding-left: 20px; /*Was 50*/
-			padding-right: 20px;
 		}
 
 		.thumbnail{
-			margin-top: 10px;
 			background-color: #444444;
-			height:540px;
-			border: 0px;
-			border-radius: 0px;
-			padding:0px;
+			border-radius:0px;
+			border:0px;
+			padding: 0px
 		}
 
 		.thumbnail .caption{
@@ -327,7 +337,6 @@
 		}
 
 		.thumbnail .thumbnail-image{
-			
 			width:100%;
 			padding-top: 100%;
 			margin:auto;
