@@ -1,0 +1,414 @@
+/*Coming soon page*/
+	.soon-body{
+		/*background-image: url("../images/slide1.jpg");*/
+		background-size:cover;
+		background-position: 50% 10%;
+		background-repeat: no-repeat;
+		text-align: center;
+		color: #fff;
+	}
+
+	.container-1{
+		margin:auto;
+	}
+
+	.soon-body .heading{
+		margin:200px;
+	}
+
+	.soon-body h1{
+		font-size: 72px;
+	}
+
+	.soon-body h2{
+		font-size: 32px;
+		color:#e0e0e0;
+	}
+
+
+/*General CSS*/
+	h1, h2, h3{
+		font-family: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+
+
+	h4, h5, h6{
+		font-family: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
+		font-weight: bold;
+		color: #C0C0C0;
+	}
+
+	p{
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		color:#e0e0e0;
+		font-size: 13px;
+	}
+
+	body {
+		background-color: #202020;
+		padding-top: 50px; /* For the 50px navbar */
+		padding-bottom: 20px;
+	}
+
+#site-wrapper{
+	min-width: 1084px;
+}
+
+
+	
+/*Navbar CSS*/
+
+	.navbar {
+		background-color:#202020;/*Max made it the background colour. I think it looks better to not have buttons, just floating headers - from #333333*/ 
+		font-family: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
+		font-size: 20px;
+		border:0px;
+	}
+
+	.navbar .container-fluid{
+		min-width: 999px;
+	}
+
+	
+	.navbar-header{
+	}
+
+	.navbar-header > a {
+		color:#bbbbbb;
+		font-size: 20px;
+		text-align: center;
+		width:223px;
+	}
+
+	.navbar-brand{
+		display: inline-block;
+	}
+
+	.navbar-brand span{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.navbar-logo{
+		height: 50px;
+		width: 50px;
+		display: inline-block !important;
+		margin-left: 10px;
+	}
+
+	.navbar-collapse .navbar-nav{
+		width:80%;
+		min-width: 776px;
+	}
+
+	.navbar-collapse .navbar-nav > li {
+		text-align: center;
+		width: 20%;
+		min-width: 155px;
+	}
+
+	.navbar-collapse .navbar-nav > li > a{
+		color:#bbbbbb;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.navbar-collapse .navbar-nav > li > a:hover, .navbar-collapse .navbar-header > a:hover {
+		color:#ffffff;
+		text-decoration: none;
+	}
+
+	
+
+
+	/*Dropdowns*/
+		.dropdown:hover{
+			background-color: #666666;
+		}
+
+		.dropdown:hover .dropdown-menu {
+		    display: block;
+		}
+
+		.dropdown-menu {
+		    border:0px;
+		    width:100%;
+			text-align: center;
+			background-color: #333333;
+			padding:0px;
+			border-radius: 0px;
+		}
+
+		.dropdown .dropdown-menu li a{
+			font-family: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #bbbbbb;
+		    padding-top: 10px;
+		    padding-bottom: 10px;
+		    text-transform: uppercase;
+		}
+
+		.dropdown .dropdown-menu li a:hover{
+			color: #ffffff;
+			background-color: #666666;
+		}
+
+	.register{
+		background-color:#87212E;
+	}
+
+	.register:hover{
+		background-color: #C10537;
+	}
+
+
+/*Unslider CSS*/
+	.slider{
+		position:relative;
+		overflow: auto;
+	}
+
+		.slider li{
+			list-style: none;
+			text-align: center;
+			padding-top:40px;
+			padding-bottom: 90px;
+			color:#fff;
+		}
+
+			.slider li h1{
+				font-size: 72px;
+			}
+
+		.slider ul li{
+			float: left;
+		}
+		/*Dots*/
+			.dots {
+			    position: absolute;
+			    left: 0;
+			    right: 0;
+			    top: 290px;
+			    text-align: center;
+				}
+				.dots li {
+					display: inline-block;
+					width: 5px;
+					height: 5px;
+					margin: 0 4px;
+					padding:7px;
+					text-indent: -999em;
+					border: 2px solid #fff;
+					border-radius: 14px;
+					background-color: #bbbbbb;
+					cursor: pointer;
+					opacity: .6;
+				}
+				.dots .active{
+					background-color: #dddddd;
+					opacity: .8;
+				}
+		/*Arrows*/
+			.arrows {
+				margin:0px;
+			}
+
+			.arrows .prev {
+			    position: absolute;
+			    left:15px;
+			    top: 219px;
+			}
+
+			.arrows .next {
+			    position: absolute;
+			    right: 15px;
+			    top: 219px;
+			}
+
+			.arrows .glyphicon{
+				font-size: 70px;
+				color:#ccc; /*Max darkened the arrows*/
+				cursor: pointer;
+			}
+
+		/*Slide Images*/
+			.slide1{
+				background-image: url("../images/slide1.jpg");
+				background-size:cover;
+				background-position: 50% 50%;
+				background-color: #888888;
+
+			}
+			.slide2{
+				background-image: url("../images/slide2.jpg");
+				background-color: #888888;
+			}
+			.slide3{
+				background-image: url("../images/slide3.jpg");
+				background-color: #888888;
+			}	
+
+/*Jumbotron CSS*/
+	.jumbotron{
+		text-align: center;
+	}
+	.jumbotron h1{
+		color: #fff;
+	}
+
+/*Main Body CSS*/
+	.main-body{
+		margin-right: 50px;
+		margin-left: 50px;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		color:#fff;
+
+	}
+
+	.main-body h1{
+		color:#ffffff;
+		margin-top: 10px;
+		padding-top: 40px;
+	}
+
+
+	.main-body p{
+		text-transform: 
+	}
+
+	.main-body .underline{
+		height:1px;
+		width:200px;
+		background-color: #009FD7;
+	}
+
+	.heading-background{
+		background-size:cover;
+		background-attachment: fixed;
+		background-color: #888888;
+		background-position: center;
+		width:100%;
+		height:338px;
+		padding-top: 70px;
+		text-align: center;
+	}
+
+		.heading-background h1{
+			font-size: 72px;
+			color: #fff;
+		}
+
+		.about-heading-background{
+			background-image: url("../images/about.jpg");
+		}
+
+	/*Thumbnail CSS*/
+		.row{
+			padding-left: 20px; /*Was 50*/
+			padding-right: 20px;
+		}
+
+		.thumbnail{
+			margin-top: 10px;
+			background-color: #444444;
+			height:540px;
+			border: 0px;
+			border-radius: 0px;
+			padding:0px;
+		}
+
+		.thumbnail .caption{
+			padding-top: 15px;
+			padding-left: 15px;
+		}
+
+		.thumbnail .thumbnail-image{
+			
+			width:100%;
+			padding-top: 100%;
+			margin:auto;
+			margin-top: 2.5%;
+			background-color: #202020;
+		}
+
+			.thumbnail-image-1{
+				background-image: url("../images/thumb1.jpg")
+			}
+
+
+			.thumbnail-image-2{
+				background-image: url("../images/thumb2.jpg")
+			}
+
+
+			.thumbnail-image-3{
+				background-image: url("../images/thumb3.jpg")
+			}
+
+		.col-md-4{
+			padding: 0px;/*Limit the maximum expansion of this column system to a #px. Make sure the images fully expand each subcontainer when it swaps the horizontal column array into a vertical column array*/
+		}
+
+
+/*Footer CSS*/
+	#footer{
+		background-color: #444444;
+		padding-top: 50px;
+	}
+
+	#footer span{
+		padding-right: 20px;
+		padding-left: 20px;
+		font-weight: bold;
+	}
+
+	.aux-nav{
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	.aux-nav a{
+		text-decoration: none;
+		color: #bbbbbb;
+	}
+
+	.aux-nav a:hover{
+		color:#ffffff;
+	}
+
+	/*Social Media CSS*/
+		.social-media{
+			text-align: center;
+			padding-bottom: 30px;
+		}
+
+		.media-icon{
+			height:64px;
+			width:64px;
+			display:inline-block;
+		}
+
+		.facebook-icon{
+			background-image:url("../images/facebook-64.png");
+		}
+
+		.twitter-icon{
+			background-image:url("../images/twitter-64.png");
+		}
+
+		.instagram-icon{
+			background-image:url("../images/instagram-64.png");
+		}
+
+
+
+	.footer-end{
+		color:#c0c0c0;/*Max knocked the colour up a few notches from #bbbbbb to the current*/ 
+		font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+		text-align: center;
+		padding-bottom: 20px;
+	}
