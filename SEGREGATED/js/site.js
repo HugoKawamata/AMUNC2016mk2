@@ -19,22 +19,21 @@ $( document ).ready(function() {
 	 	//When the site goes into mobile view, the logo will disappear
 		 $(window).resize(function(){	
 		 	if ($(window).width() < 768) {
-			   console.log("hidelogo");
 			   $(".logo-container").hide();
+			   console.log("hide+move");
+			   $(".dropdown-menu").css({"position": "absolute", "top": "80px"});
 			}
 			else {
-			   console.log("big boys");
 			   $(".logo-container").show();
 			}
 		});
 		//If the site starts in mobile view, the logo will disappear
 		if ($(window).width() < 768) {
-		   console.log("hidelogo");
 		   $(".logo-container").hide();
 		}
 		else {
-		   console.log("big boys");
 		   $(".logo-container").show();
 		}
+
 
 });

@@ -146,6 +146,7 @@
 			background-color: #333333;
 			padding:0px;
 			border-radius: 0px;
+		    z-index: 50;
 		}
 
 		.dropdown .dropdown-menu li a{
@@ -263,6 +264,8 @@
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-color: #555;
+		background-size: cover;
+		background-position: -50%;
 	}
 	.jumbotron h1{
 		color: #fff;
