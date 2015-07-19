@@ -74,20 +74,47 @@ $( document ).ready(function() {
 		//If the site starts in mobile view, the logo will disappear
 		 	if ($(window).width() < 768) {
 			   $(".logo-container").hide(); //Hide logo
-			   $(".navbar > .container-fluid").css({"min-width": "0px"}); //Resize navbar container
+
+			   $(".navbar > .container-fluid").css({ //Resize navbar container
+			  		"min-width": "0px"
+			   }); 
 			   $(".navbar-collapse > .navbar-nav").css({ //Resize navbar elements
 				   	"width": "auto",
 				   	"min-width": "0px"
-				   });
+				});
 			   $(".navbar-collapse > .navbar-nav > li").css({ //Resize navbar elements
 			   		"width": "auto",
 			   		"min-width": "0px",
 			   		"overflow": "visible"
 			   });
+			   $(".dropdown-menu").css({
+			   		"min-width": "auto",
+			   });
+			   
+
+
 
 			}
 			else {
 			   $(".logo-container").show();
+			   
+			   $(".navbar > .container-fluid").css({ //Resize navbar container
+			  		"min-width": "1003px"
+			   }); 
+			   $(".navbar-collapse > .navbar-nav").css({ //Resize navbar elements
+				   	"width": "80%",
+				   	"min-width": "795px"
+				});
+			   $(".navbar-collapse > .navbar-nav > li").css({ //Resize navbar elements
+			   		"width": "20%",
+			   		"min-width": "159px",
+			   		"overflow": "visible"
+			   	});
+			   $(".dropdown-menu").css({ //The dropdown menu's min width is the width of the parent li
+			   		"min-width": "100%",
+			   });
+			   
+			   
 			}
 	//-------------------NAVBAR COLLAPSE FIX-------------------//
 		

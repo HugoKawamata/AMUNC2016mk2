@@ -138,7 +138,9 @@
 			text-decoration: none;
 		}
 
-	
+		.active-nav{
+			background-color: #333;
+		}
 
 
 	/*Dropdowns*/
